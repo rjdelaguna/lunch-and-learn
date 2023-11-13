@@ -31,4 +31,55 @@ describe "Tourist sites request" do
     expect(sites).to be_an Array
     expect(sites.count).to eq(0)
   end
+  
+  it "returns error 404 when country is not found", :vcr do
+    get "/api/v1/tourist_sites?country=asiugbiu"
+
+    expect(response).not_to be_successful
+
+    sites = JSON.parse(response.body, symbolize_names: true)[:data]
+    
+    expect(sites).to be_a Hash
+    expect(sites.keys).to eq([:id, :type, :attributes])
+    expect(sites[:id]).to be nil
+    expect(sites[:type]).to eq("error")
+    expect(sites[:attributes]).to be_a Hash
+    expect(sites[:attributes].keys).to eq([:message, :status_code])
+    expect(sites[:attributes][:message]).to eq("Country Not Found")
+    expect(sites[:attributes][:status_code]).to eq("404")
+  end
+  
+  it "returns error 404 when country is an empty string", :vcr do
+    get "/api/v1/tourist_sites?country="
+
+    expect(response).not_to be_successful
+
+    sites = JSON.parse(response.body, symbolize_names: true)[:data]
+    
+    expect(sites).to be_a Hash
+    expect(sites.keys).to eq([:id, :type, :attributes])
+    expect(sites[:id]).to be nil
+    expect(sites[:type]).to eq("error")
+    expect(sites[:attributes]).to be_a Hash
+    expect(sites[:attributes].keys).to eq([:message, :status_code])
+    expect(sites[:attributes][:message]).to eq("Country Not Found")
+    expect(sites[:attributes][:status_code]).to eq("404")
+  end
+  
+  it "returns error 404 when no country param is present", :vcr do
+    get "/api/v1/tourist_sites"
+
+    expect(response).not_to be_successful
+
+    sites = JSON.parse(response.body, symbolize_names: true)[:data]
+    
+    expect(sites).to be_a Hash
+    expect(sites.keys).to eq([:id, :type, :attributes])
+    expect(sites[:id]).to be nil
+    expect(sites[:type]).to eq("error")
+    expect(sites[:attributes]).to be_a Hash
+    expect(sites[:attributes].keys).to eq([:message, :status_code])
+    expect(sites[:attributes][:message]).to eq("Country Not Found")
+    expect(sites[:attributes][:status_code]).to eq("404")
+  end
 end

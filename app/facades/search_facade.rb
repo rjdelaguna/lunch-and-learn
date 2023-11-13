@@ -32,9 +32,13 @@ class SearchFacade
 
   def tourist_sites(index)
     country = RestCountriesService.new.country(index)[0]
-    places = TouristSitesService.new.sites(country[:capitalInfo][:latlng])[:features]
-    places.map do |p|
-      TouristSite.new(p)
+    if !country
+      "Country Not Found"
+    else
+      places = TouristSitesService.new.sites(country[:capitalInfo][:latlng])[:features]
+      places.map do |p|
+        TouristSite.new(p)
+      end
     end
   end
 end

@@ -16,6 +16,11 @@ class Api::V1::SearchController < ApplicationController
 
   def tourist_sites
     country = params[:country]
-    render json: TouristSiteSerializer.new(SearchFacade.new.tourist_sites(country))
+    sites = SearchFacade.new.tourist_sites(country)
+    if sites == "Country Not Found" || !country
+      render json: ErrorSerializer.new(ErrorMessage.new("Country Not Found", "404")), status: :not_found
+    else
+      render json: TouristSiteSerializer.new(SearchFacade.new.tourist_sites(country))
+    end
   end
 end

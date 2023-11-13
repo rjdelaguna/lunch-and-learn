@@ -210,20 +210,178 @@
           null
         ]
       },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/controllers/api/v1/search_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          5,
+          5,
+          5,
+          3,
+          null,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/facades/search_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          7,
+          7,
+          3,
+          null,
+          4,
+          4,
+          40,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/services/rest_countries_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          7,
+          null,
+          null,
+          1,
+          7,
+          7,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          7,
+          7,
+          null,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/services/tourist_sites_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null
+        ]
+      },
       "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/poros/tourist_site.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          4,
-          4,
-          4,
+          40,
+          40,
+          40,
+          null,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/serializers/tourist_site_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/serializers/error_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/robertdelaguna/turing_work/3mod/projects/lunch-and-learn/app/poros/error_message.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          3,
+          3,
           null,
           null
         ]
       }
     },
-    "timestamp": 1699898735
+    "timestamp": 1699899774
   }
 }
