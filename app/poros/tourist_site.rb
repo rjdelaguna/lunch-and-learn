@@ -3,7 +3,7 @@ class TouristSite
 
 def initialize(data)
   @name = data[:properties][:name]
-  @address = data[:properties][:formatted]
+  @address = data[:properties][:formatted] || "none"
   @place_id = data[:properties][:place_id]
 end
 end

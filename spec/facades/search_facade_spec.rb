@@ -61,5 +61,23 @@ RSpec.describe SearchFacade do
       expect(photos).to be_an Array
       expect(photos.count).to eq(0)
     end
+    
+    it "#tourist_sites", :vcr do
+      tourist_sites = @sf.tourist_sites("New Zealand")
+      expect(tourist_sites).to be_an Array
+      expect(tourist_sites).to all be_a TouristSite
+      tourist_sites.each do |p|
+        expect(p.instance_variables).to eq([:@name, :@address, :@place_id])
+        expect(p.name).to be_a String
+        expect(p.address).to be_a String
+        expect(p.place_id).to be_a String
+      end
+    end
+
+    it "if no tourist_sites are found it returns an empty array", :vcr do
+      tourist_sites = @sf.tourist_sites("Uruguay")
+      expect(tourist_sites).to be_an Array
+      expect(tourist_sites.count).to eq(0)
+    end
   end
 end

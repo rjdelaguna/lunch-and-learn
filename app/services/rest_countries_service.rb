@@ -14,6 +14,7 @@ class RestCountriesService
   end
 
   def country(index)
-    get_url("name/#{index}")
+    uri_country = URI.encode_uri_component(index)
+    get_url("name/#{uri_country}")
   end
 end
