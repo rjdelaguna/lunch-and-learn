@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=<YOUTUBE_API_KEY>&part=snippet&q=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 13 Nov 2023 01:09:19 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjc2VhcmNoTGlzdFJlc3BvbnNlIiwKICAiZXRhZyI6ICJocGJVSHB3alBIUWJWbnAzRFRYMkV4d1ZWVmciLAogICJuZXh0UGFnZVRva2VuIjogIkNBVVFBQSIsCiAgInJlZ2lvbkNvZGUiOiAiVVMiLAogICJwYWdlSW5mbyI6IHsKICAgICJ0b3RhbFJlc3VsdHMiOiAxODQsCiAgICAicmVzdWx0c1BlclBhZ2UiOiA1CiAgfSwKICAiaXRlbXMiOiBbCiAgICB7CiAgICAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgICAgImV0YWciOiAiUEE1TUdCSERjejdfeGw5b3B1Y1BPQ2YzNkE0IiwKICAgICAgImlkIjogewogICAgICAgICJraW5kIjogInlvdXR1YmUjdmlkZW8iLAogICAgICAgICJ2aWRlb0lkIjogIjBmWHFraUxfNFVNIgogICAgICB9LAogICAgICAic25pcHBldCI6IHsKICAgICAgICAicHVibGlzaGVkQXQiOiAiMjAyMC0wMi0wN1QyMTozMDozNVoiLAogICAgICAgICJjaGFubmVsSWQiOiAiVUNsdVE1eUluYmVBa2tlQ25kTm5VaHB3IiwKICAgICAgICAidGl0bGUiOiAiQSBTdXBlciBRdWljayBIaXN0b3J5IG9mIHRoZSBDemVjaCBSZXB1YmxpYyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlNvdXJjZXM6ICdUaGUgSGlzdG9yeSBvZiB0aGUgQ3plY2ggUmVwdWJsaWMgYW5kIFNsb3Zha2lhJyAoMjAxMSkgYnkgV2lsbGlhbSBNLiBNYWhvbmV5LCBHcmVlbndvb2QgUHVibGlzaGVycywgU2FudGEgQmFyYmFyYSwgLi4uIiwKICAgICAgICAidGh1bWJuYWlscyI6IHsKICAgICAgICAgICJkZWZhdWx0IjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvMGZYcWtpTF80VU0vZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiA5MAogICAgICAgICAgfSwKICAgICAgICAgICJtZWRpdW0iOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wZlhxa2lMXzRVTS9tcWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMzIwLAogICAgICAgICAgICAiaGVpZ2h0IjogMTgwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wZlhxa2lMXzRVTS9ocWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNDgwLAogICAgICAgICAgICAiaGVpZ2h0IjogMzYwCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICAiY2hhbm5lbFRpdGxlIjogIk1yIEhpc3RvcnkiLAogICAgICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIiwKICAgICAgICAicHVibGlzaFRpbWUiOiAiMjAyMC0wMi0wN1QyMTozMDozNVoiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgICAgImV0YWciOiAiWkI1bHFHbjF1RmRTd0U0MHc5aVh0dnNsQUV3IiwKICAgICAgImlkIjogewogICAgICAgICJraW5kIjogInlvdXR1YmUjdmlkZW8iLAogICAgICAgICJ2aWRlb0lkIjogImY1VkNCVS1iWnBJIgogICAgICB9LAogICAgICAic25pcHBldCI6IHsKICAgICAgICAicHVibGlzaGVkQXQiOiAiMjAyMi0xMi0xOVQxMTo0MTo1OVoiLAogICAgICAgICJjaGFubmVsSWQiOiAiVUNsdVE1eUluYmVBa2tlQ25kTm5VaHB3IiwKICAgICAgICAidGl0bGUiOiAiQSBTdXBlciBRdWljayBIaXN0b3J5IG9mIFBvbGFuZCIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlNvdXJjZXM6IOKAnEEgQ29uY2lzZSBIaXN0b3J5IG9mIFBvbGFuZOKAnSAoMjAxOSkgYnkgSmVyenkgTHVrb3dza2kgYW5kIFcuSC4gWmF3YWR6a2kuLiBDYW1icmlkZ2UgVW5pdmVyc2l0eSBQcmVzcywgQ2FtYnJpZGdlLCAuLi4iLAogICAgICAgICJ0aHVtYm5haWxzIjogewogICAgICAgICAgImRlZmF1bHQiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9mNVZDQlUtYlpwSS9kZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDEyMCwKICAgICAgICAgICAgImhlaWdodCI6IDkwCiAgICAgICAgICB9LAogICAgICAgICAgIm1lZGl1bSI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL2Y1VkNCVS1iWnBJL21xZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAzMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiAxODAKICAgICAgICAgIH0sCiAgICAgICAgICAiaGlnaCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL2Y1VkNCVS1iWnBJL2hxZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiA0ODAsCiAgICAgICAgICAgICJoZWlnaHQiOiAzNjAKICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJjaGFubmVsVGl0bGUiOiAiTXIgSGlzdG9yeSIsCiAgICAgICAgImxpdmVCcm9hZGNhc3RDb250ZW50IjogIm5vbmUiLAogICAgICAgICJwdWJsaXNoVGltZSI6ICIyMDIyLTEyLTE5VDExOjQxOjU5WiIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNzZWFyY2hSZXN1bHQiLAogICAgICAiZXRhZyI6ICI0a3J4VmVqaTh3N2F6aE1XeXFQeEtZRFFsUnMiLAogICAgICAiaWQiOiB7CiAgICAgICAgImtpbmQiOiAieW91dHViZSN2aWRlbyIsCiAgICAgICAgInZpZGVvSWQiOiAicVYtVDV1ZTJWZHciCiAgICAgIH0sCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDIwLTEyLTA3VDA5OjE2OjQ4WiIsCiAgICAgICAgImNoYW5uZWxJZCI6ICJVQ2x1UTV5SW5iZUFra2VDbmROblVocHciLAogICAgICAgICJ0aXRsZSI6ICJBIFN1cGVyIFF1aWNrIEhpc3Rvcnkgb2YgSHVuZ2FyeSIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlNvdXJjZXM6IFwiSHVuZ2FyeTogQSBTaG9ydCBIaXN0b3J5XCIgKDIwMTkpIGJ5IE5vcm1hbiBTdG9uZS4gUHJvZmlsZSBCb29rcywgTG9uZG9uLiBcIlRoZSBXaWxsIHRvIFN1cnZpdmU6IEEgSGlzdG9yeSBvZiBIdW5nYXJ5XCIgLi4uIiwKICAgICAgICAidGh1bWJuYWlscyI6IHsKICAgICAgICAgICJkZWZhdWx0IjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvcVYtVDV1ZTJWZHcvZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiA5MAogICAgICAgICAgfSwKICAgICAgICAgICJtZWRpdW0iOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9xVi1UNXVlMlZkdy9tcWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMzIwLAogICAgICAgICAgICAiaGVpZ2h0IjogMTgwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9xVi1UNXVlMlZkdy9ocWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNDgwLAogICAgICAgICAgICAiaGVpZ2h0IjogMzYwCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICAiY2hhbm5lbFRpdGxlIjogIk1yIEhpc3RvcnkiLAogICAgICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIiwKICAgICAgICAicHVibGlzaFRpbWUiOiAiMjAyMC0xMi0wN1QwOToxNjo0OFoiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJraW5kIjogInlvdXR1YmUjc2VhcmNoUmVzdWx0IiwKICAgICAgImV0YWciOiAicmg2QkJLdVNMaHFjNWVjdm9hOHZMUkdXWmZZIiwKICAgICAgImlkIjogewogICAgICAgICJraW5kIjogInlvdXR1YmUjdmlkZW8iLAogICAgICAgICJ2aWRlb0lkIjogIldldFFaR1g2b2R3IgogICAgICB9LAogICAgICAic25pcHBldCI6IHsKICAgICAgICAicHVibGlzaGVkQXQiOiAiMjAxOS0wNS0yOVQyMjozNjowOVoiLAogICAgICAgICJjaGFubmVsSWQiOiAiVUNsdVE1eUluYmVBa2tlQ25kTm5VaHB3IiwKICAgICAgICAidGl0bGUiOiAiQSBTdXBlciBRdWljayBIaXN0b3J5IG9mIEF1c3RyaWEiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJTb3VyY2VzOiDigJxBdXN0cmlh4oCdIGJ5IEplYW5pbmUgU2FubmEgKDIwMTMpLCBNYXNvbiBDcmVzdCwgUGVubnN5bHZhbmlhLiBGdW5rIGFuZCBXYWduYWxsJ3MgTmV3IEVuY3ljbG9wZWRpYSAoMTk5MCkgdm9sLiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL1dldFFaR1g2b2R3L2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvV2V0UVpHWDZvZHcvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvV2V0UVpHWDZvZHcvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImNoYW5uZWxUaXRsZSI6ICJNciBIaXN0b3J5IiwKICAgICAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIsCiAgICAgICAgInB1Ymxpc2hUaW1lIjogIjIwMTktMDUtMjlUMjI6MzY6MDlaIgogICAgICB9CiAgICB9LAogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3NlYXJjaFJlc3VsdCIsCiAgICAgICJldGFnIjogInpyVnpwM3NSLUtvY1B5TUxoOHYtMzNKNVE2WSIsCiAgICAgICJpZCI6IHsKICAgICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgICAidmlkZW9JZCI6ICJwS2hkeFlHdzgzSSIKICAgICAgfSwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMjAtMDUtMjdUMjM6MTc6MjNaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDbHVRNXlJbmJlQWtrZUNuZE5uVWhwdyIsCiAgICAgICAgInRpdGxlIjogIkEgU3VwZXIgUXVpY2sgSGlzdG9yeSBvZiBFc3RvbmlhIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiUGljdHVyZXMgUmVxdWlyaW5nIEF0dHJpYnV0aW9uOiBTdC4gQWxiYW5zIERpc3RyaWN0IENvdW5jaWw6IGh0dHBzOi8vY29tbW9ucy53aWtpbWVkaWEub3JnL3dpa2kvRmlsZTpSb21hbl9jb2luIC4uLiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3BLaGR4WUd3ODNJL2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvcEtoZHhZR3c4M0kvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvcEtoZHhZR3c4M0kvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImNoYW5uZWxUaXRsZSI6ICJNciBIaXN0b3J5IiwKICAgICAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIsCiAgICAgICAgInB1Ymxpc2hUaW1lIjogIjIwMjAtMDUtMjdUMjM6MTc6MjNaIgogICAgICB9CiAgICB9CiAgXQp9Cg==
+  recorded_at: Mon, 13 Nov 2023 01:09:19 GMT
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest/?api_key=<FLICKR_API_KEY>&format=json&method=flickr.photos.search&tags=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 13 Nov 2023 01:09:20 GMT
+      Server:
+      - Apache/2.4.57 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Wed, 13-Dec-2023 01:09:20 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Wed, 13-Dec-2023 01:09:20 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 eaf5cf20e530df46eabc6f43f9564604.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX3-C4
+      X-Amz-Cf-Id:
+      - FHgh3uRa9loyrst6mXMb7n2tlM0aYLOaeo24uEOBAe6iEPqxOd5PJw==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"stat":"fail","code":3,"message":"Parameterless searches
+        have been disabled. Please use flickr.photos.getRecent instead."})
+  recorded_at: Mon, 13 Nov 2023 01:09:20 GMT
+recorded_with: VCR 6.2.0
