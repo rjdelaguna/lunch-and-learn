@@ -79,5 +79,17 @@ RSpec.describe SearchFacade do
       expect(tourist_sites).to be_an Array
       expect(tourist_sites.count).to eq(0)
     end
+    
+    it "if no country was found it returns 'Country Not Found'", :vcr do
+      tourist_sites = @sf.tourist_sites("asifubg")
+      expect(tourist_sites).to be_a String
+      expect(tourist_sites).to eq("Country Not Found")
+    end
+    
+    it "if no country was passed in it returns 'Country Not Found'", :vcr do
+      tourist_sites = @sf.tourist_sites(nil)
+      expect(tourist_sites).to be_a String
+      expect(tourist_sites).to eq("Country Not Found")
+    end
   end
 end
