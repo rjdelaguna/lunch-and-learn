@@ -30,7 +30,8 @@ class SearchFacade
     end
   end
 
-  def places(index)
+  def tourist_sites(index)
+    country = RestCountriesService.new.country(index)
     places = PlacesService.new.places(index)
   end
 end

@@ -13,4 +13,9 @@ class Api::V1::SearchController < ApplicationController
     country = params[:country]
     render json: LearningResourceSerializer.new(LearningResource.new(country, SearchFacade.new.video(country), SearchFacade.new.photos(country)))
   end
+
+  def tourist_sites
+    country = params[:country]
+    render json: TouristSiteSerializer.new(TouristSite.new(country, SearchFacade.new.tourist_sites(country)))
+  end
 end

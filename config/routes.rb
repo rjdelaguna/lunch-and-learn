@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get "recipes", to: "search#recipes"
       get "learning_resources", to: "search#learning_resources"
+      get "tourist_sites", to: "search#tourist_sites"
       resources :users, only: [:create]
       post "sessions", to: "users#login"
     end

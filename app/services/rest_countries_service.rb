@@ -12,4 +12,8 @@ class RestCountriesService
   def countries
     get_url("all")
   end
+
+  def country(index)
+    get_url("name/#{index}")
+  end
 end
