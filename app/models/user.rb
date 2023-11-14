@@ -4,4 +4,6 @@ class User <ApplicationRecord
   validates_presence_of :name, :password, :password_confirmation
 
   has_secure_password
+
+  has_many :favorites
 end

@@ -3,8 +3,10 @@ class Api::V1::UsersController < ApplicationController
     new_user = User.new(user_params)
     if new_user.save
       render json: UserSerializer.new(new_user)
-    else
+    elsif params[:password] != params[:password_confirmation]
       render json: ErrorSerializer.new(ErrorMessage.new(new_user.errors.full_messages, "401")), status: :unauthorized
+    else
+      render json: ErrorSerializer.new(ErrorMessage.new("Credentials Invalid", "401")), status: :unauthorized
     end
   end
 

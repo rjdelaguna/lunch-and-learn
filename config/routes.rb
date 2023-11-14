@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get "tourist_sites", to: "search#tourist_sites"
       resources :users, only: [:create]
       post "sessions", to: "users#login"
+      resources :favorites, only: [:create, :index]
     end
   end
 end
