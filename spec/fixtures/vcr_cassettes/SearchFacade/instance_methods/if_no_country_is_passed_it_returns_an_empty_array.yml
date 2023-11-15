@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.flickr.com/services/rest/?api_key=<FLICKR_API_KEY>&format=json&method=flickr.photos.search&tags=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 14 Nov 2023 22:16:04 GMT
+      Server:
+      - Apache/2.4.57 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Thu, 14-Dec-2023 22:16:04 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      - ccc=%7B%22needsConsent%22%3Atrue%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A1%7D%7D%7D;
+        expires=Thu, 14-Dec-2023 22:16:04 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2a2fa0b54f96e81274810bd8cdd127ac.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - LAX3-C4
+      X-Amz-Cf-Id:
+      - b-bNlVs9dpehTuutpcgy5J0xCaG_PE_d-VT9MW2rPaqA-_fEeOwFjw==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"stat":"fail","code":3,"message":"Parameterless searches
+        have been disabled. Please use flickr.photos.getRecent instead."})
+  recorded_at: Tue, 14 Nov 2023 22:16:04 GMT
+recorded_with: VCR 6.2.0

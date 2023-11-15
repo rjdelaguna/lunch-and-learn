@@ -9,7 +9,6 @@ class Api::V1::FavoritesController < ApplicationController
   end
 
   def create
-    # 70961c8c9d9e7638f21a454d25acd525
     user = User.find_by(api_key: params[:api_key])
     if !user
       render json: ErrorSerializer.new(ErrorMessage.new("User Not Found", "404")), status: :not_found

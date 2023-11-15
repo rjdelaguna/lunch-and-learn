@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=<YOUTUBE_API_KEY>&part=snippet&q=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 14 Nov 2023 22:26:47 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "qMno759SocKcXtOvcrjHXFSQTic",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 183,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "Nem1wHySt-37537GeOtsRAu_LEg",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "zq6CoIoQZ-w"
+              },
+              "snippet": {
+                "publishedAt": "2021-12-29T21:52:22Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Malta",
+                "description": "Pictures Requiring Attribution: Gabriel Treeby Coleiro: https://commons.wikimedia.org/wiki/File:Fungus_Rock,_Dwejra,_Gozo.jpg ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/zq6CoIoQZ-w/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/zq6CoIoQZ-w/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/zq6CoIoQZ-w/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-12-29T21:52:22Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "H2rzY5DIeAhW_H173FxDsjrTDqE",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "ItTr4KedOYk"
+              },
+              "snippet": {
+                "publishedAt": "2022-04-22T03:27:42Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Mozambique",
+                "description": "Pictures Requiring Attribution: Jolle: https://en.wikipedia.org/wiki/File:Mz_etnies.PNG Bediong: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/ItTr4KedOYk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/ItTr4KedOYk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/ItTr4KedOYk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-04-22T03:27:42Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "KfRWVTkI-dyoD3H2gcY_8MwIv3A",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "u3ldfW6IZnM"
+              },
+              "snippet": {
+                "publishedAt": "2019-12-30T22:28:07Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Costa Rica",
+                "description": "Pictures Requiring Attribution: Madman2001: https://en.wikipedia.org/wiki/File:Pre-Columbian_incense_burner ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/u3ldfW6IZnM/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/u3ldfW6IZnM/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/u3ldfW6IZnM/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-12-30T22:28:07Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "DSBcQ3JhPuDA2mJKEWO3Dgg9LiE",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "rAKxmRI4wHI"
+              },
+              "snippet": {
+                "publishedAt": "2019-10-26T20:24:02Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Chad",
+                "description": "Pictures Requiring Attribution: Estonian Foreign Ministry: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/rAKxmRI4wHI/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/rAKxmRI4wHI/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/rAKxmRI4wHI/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-10-26T20:24:02Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "LL6RdzORSvaqvHrUBCKS-UZW_8Q",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "65e09vsw3nE"
+              },
+              "snippet": {
+                "publishedAt": "2022-03-31T22:54:28Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Montenegro",
+                "description": "Pictures Requiring Attribution: Trolvag: https://commons.wikimedia.org/wiki/File:Lovcen_-_panoramio.jpg MaryroseB54: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/65e09vsw3nE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/65e09vsw3nE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/65e09vsw3nE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-31T22:54:28Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Tue, 14 Nov 2023 22:26:47 GMT
+recorded_with: VCR 6.2.0

@@ -45,6 +45,18 @@ RSpec.describe SearchFacade do
       expect(video.keys).to eq([])
     end
     
+    it "if nothing is passed in it returns an empty hash", :vcr do
+      video = @sf.video(nil)
+      expect(video).to be_a Hash
+      expect(video.keys).to eq([])
+    end
+    
+    it "if an empty string is passed in it returns an empty hash", :vcr do
+      video = @sf.video("")
+      expect(video).to be_a Hash
+      expect(video.keys).to eq([])
+    end
+    
     it "#photos", :vcr do
       photos = @sf.photos("germany")
       expect(photos).to be_an Array
@@ -58,6 +70,12 @@ RSpec.describe SearchFacade do
 
     it "if no photos is found it returns an empty array", :vcr do
       photos = @sf.photos("asldfjalshasfgsf")
+      expect(photos).to be_an Array
+      expect(photos.count).to eq(0)
+    end
+    
+    it "if no country is passed it returns an empty array", :vcr do
+      photos = @sf.photos(nil)
       expect(photos).to be_an Array
       expect(photos.count).to eq(0)
     end

@@ -21,12 +21,13 @@ describe "Recipes request" do
     end
   end
 
-  it "returns random countries recipes when none is passed in" do
-    json_response = File.read('spec/fixtures/random_selector.json')
-    stub_request(:get, "/api/v1/recipes").to_return(status: 200, body: json_response)
+  it "returns random countries recipes when none is passed in", :vcr do
+    json_response = File.read('spec/fixtures/random_country.json')
+    stub_request(:get, "https://restcountries.com/v3.1/all").to_return(status: 200, body: json_response)
 
-    recipes = JSON.parse(json_response, symbolize_names: true)[:data]
+    get "/api/v1/recipes"
 
+    recipes = JSON.parse(response.body, symbolize_names: true)[:data]
     recipes.each do |recipe|
       expect(recipe.keys).to eq([:id, :type, :attributes])
       expect(recipe[:attributes].keys).to eq([:title, :url, :country, :image])
